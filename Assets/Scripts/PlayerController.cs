@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
         //Get move input
         var moveInput = Input.GetAxis("Horizontal");
        //Print move input in console
-        Debug.Log("Our move input : " + moveInput);
+       // Debug.Log("Our move input : " + moveInput);
         
         //ToDO Create movement functionality
         myRigidbody.velocity = new Vector3(moveInput * moveSpeed, myRigidbody.velocity.y, 0);
