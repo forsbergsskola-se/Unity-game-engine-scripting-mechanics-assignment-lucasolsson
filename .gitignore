@@ -73,3 +73,5 @@ crashlytics-build.properties
 .idea/.idea.Unity-game-engine-scripting-mechanics-assignment-lucasolsson/.idea/workspace.xml
 *.log
 *.xml
+*.log
+*.xml
