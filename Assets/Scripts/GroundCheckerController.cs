@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,9 @@ public class GroundCheckerController : MonoBehaviour
 {
     public float groundCheckDistance = 0.6f;
     public float groundCheckSphereRadius = 0.45f;
-
     public bool isGrounded;
+   
+
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +27,11 @@ public class GroundCheckerController : MonoBehaviour
         isGrounded = Physics.SphereCast(sphereCastRay, groundCheckSphereRadius, groundCheckDistance);
 
         //Draw a ray in the editor, only for visualization.
-        //Debug.DrawRay(transform.position, Vector3.down * groundCheckDistance, Color.red);
+        Debug.DrawRay(transform.position, Vector3.down * groundCheckDistance, Color.red);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(transform.position + Vector3.down * groundCheckDistance, groundCheckSphereRadius);
     }
 }
