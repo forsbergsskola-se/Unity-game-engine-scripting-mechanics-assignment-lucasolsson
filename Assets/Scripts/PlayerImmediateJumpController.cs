@@ -7,7 +7,7 @@ public class PlayerImmediateJumpController : MonoBehaviour
     public Rigidbody myRigidbody;
     public GroundCheckerController myGroundChecker;
     public float jumpForce = 500f;
-
+    public PlayerInputController playerInputController;
 
     // Update is called once per frame
     void Update()
@@ -20,7 +20,7 @@ public class PlayerImmediateJumpController : MonoBehaviour
         var jumpInput = Input.GetKeyDown(KeyCode.Space);
 
         //If we pressed the jump button: then jump
-        if (jumpInput == true && myGroundChecker.isGrounded == true)
+        if (playerInputController.jumpInputDown == true && myGroundChecker.isGrounded == true)
         {
             //Debug.Log("Jump");
             myRigidbody.AddForce(0, jumpForce, 0);

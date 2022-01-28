@@ -10,6 +10,7 @@ public class PlayerChargeJumpController : MonoBehaviour
     public float minimumJumpForce = 100f;
     public float maximumJumpForce = 1000f;
     public float jumpChargeTime = 1f;
+    public PlayerInputController playerInputController;
 
     private float chargeProgress = 0f;
 
@@ -21,15 +22,15 @@ public class PlayerChargeJumpController : MonoBehaviour
     private void HandleJump()
     {
         //Get jump input
-        var chargeInput = Input.GetKey(KeyCode.Space);
-        if (chargeInput == true)
+        
+        if (playerInputController.jumpInput == true)
         {
             //Increase charge progress, dividing Time.deltaTime let's us control how many seconds it takes to charge a full jump.
             chargeProgress += Time.deltaTime / jumpChargeTime;
             // chargeProgress = chargeProgress + Time.deltaTime / jumpChargeTime; (same thing)
         }
         //If we release the jump button, and are ground: then jump
-        if (Input.GetKeyUp(KeyCode.Space) == true && myGroundChecker.isGrounded == true)
+        if (playerInputController.jumpInputUp == true)
         {
             //Calculate jumpForce before resetting chargeProgress
             //Linear interpolation (Lerp) between miminumJumpForce and maximumJumpForce. chargeprProgress 

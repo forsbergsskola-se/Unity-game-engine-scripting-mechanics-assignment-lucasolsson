@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e7fb54e-8c6b-4933-9aef-84692990fa6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-game-engine-scripting-mechanics-assignment-lucasolsson/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-game-engine-scripting-mechanics-assignment-lucasolsson/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player_holder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player_holder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GroundCheckerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GroundCheckerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerChargeJumpController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerChargeJumpController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerImmediateJumpController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerImmediateJumpController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerWalking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerWalking.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
     </list>
@@ -19,6 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInputController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerChargeJumpController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -75,7 +75,7 @@
       <updated>1643107126876</updated>
       <workItem from="1643107127560" duration="4868000" />
       <workItem from="1643184691791" duration="4283000" />
-      <workItem from="1643356698763" duration="1822000" />
+      <workItem from="1643356698763" duration="4595000" />
     </task>
     <servers />
   </component>

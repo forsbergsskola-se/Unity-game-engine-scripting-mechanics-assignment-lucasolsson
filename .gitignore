@@ -77,3 +77,5 @@ crashlytics-build.properties
 *.xml
 .DS_Store
 .idea/.DS_Store
+Logs/AssetImportWorker0.log
+Logs/AssetImportWorker1.log
