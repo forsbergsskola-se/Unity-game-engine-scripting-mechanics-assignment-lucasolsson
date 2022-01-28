@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerImmediateJumpController : MonoBehaviour
 {
-    public Rigidbody myRigidbody;
-    public GroundCheckerController myGroundChecker;
-    public float jumpForce = 500f;
-    public PlayerInputController playerInputController;
+    [SerializeField] private Rigidbody myRigidbody;
+    [SerializeField] private GroundCheckerController myGroundChecker;
+    [SerializeField] private float jumpForce = 500f;
+    [SerializeField] private PlayerInputController playerInputController;
 
     // Update is called once per frame
     void Update()

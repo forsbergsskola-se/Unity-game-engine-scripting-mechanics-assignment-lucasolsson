@@ -5,13 +5,12 @@ using UnityEngine;
 
 public class PlayerChargeJumpController : MonoBehaviour
 {
-    public Rigidbody myRigidbody;
-    public GroundCheckerController myGroundChecker;
-    public float minimumJumpForce = 100f;
-    public float maximumJumpForce = 1000f;
-    public float jumpChargeTime = 1f;
-    public PlayerInputController playerInputController;
-
+    [SerializeField] private Rigidbody myRigidbody;
+    [SerializeField] private GroundCheckerController myGroundChecker;
+    [SerializeField] private float minimumJumpForce = 100f;
+    [SerializeField] private float maximumJumpForce = 1000f;
+    [SerializeField] private float jumpChargeTime = 1f;
+    [SerializeField] private PlayerInputController playerInputController;
     private float chargeProgress = 0f;
 
     // Update is called once per frame

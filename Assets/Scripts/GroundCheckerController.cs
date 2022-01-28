@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class GroundCheckerController : MonoBehaviour
 {
-    public float groundCheckDistance = 0.6f;
-    public float groundCheckSphereRadius = 0.45f;
-    public bool isGrounded;
+    [SerializeField] private float groundCheckDistance = 0.6f;
+    [SerializeField] private float groundCheckSphereRadius = 0.45f;
+    public bool isGrounded { get; private set; }
    
 
     // Update is called once per frame

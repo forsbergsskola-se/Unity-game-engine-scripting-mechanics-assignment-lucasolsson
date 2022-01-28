@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
-    public float walkInput;
-    public bool jumpInput;
-    public bool jumpInputDown;
-    public bool jumpInputUp;
+    public float walkInput { get; private set; }
+    public bool jumpInput { get; private set; }
+    public bool jumpInputDown { get; private set; }
+    public bool jumpInputUp { get; private set; }
     private void Update()
     {
         GetInput();

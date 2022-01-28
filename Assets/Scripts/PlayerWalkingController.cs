@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerWalking : MonoBehaviour
+public class PlayerWalkingController : MonoBehaviour
 {
-    public Rigidbody myRigidbody;
-    public PlayerInputController playerInputController;
+    [SerializeField] private Rigidbody myRigidbody;
+    [SerializeField] private PlayerInputController playerInputController;
     
-    public float walkSpeed = 5f;
+    [SerializeField] private float walkSpeed = 5f;
 
     // Update is called once per frame
     void Update()
