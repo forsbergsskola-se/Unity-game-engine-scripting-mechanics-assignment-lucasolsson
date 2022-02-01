@@ -10,7 +10,7 @@ public class PlayerChargeJumpController : MonoBehaviour
     [SerializeField] private float minimumJumpForce = 100f;
     [SerializeField] private float maximumJumpForce = 1000f;
     [SerializeField] private float jumpChargeTime = 1f;
-    [SerializeField] private PlayerInputController playerInputController;
+    [SerializeField] private CommandController commandController;
     private float chargeProgress = 0f;
 
     // Update is called once per frame
@@ -22,14 +22,14 @@ public class PlayerChargeJumpController : MonoBehaviour
     {
         //Get jump input
         
-        if (playerInputController.jumpInput == true)
+        if (commandController.jumpCommand == true)
         {
             //Increase charge progress, dividing Time.deltaTime let's us control how many seconds it takes to charge a full jump.
             chargeProgress += Time.deltaTime / jumpChargeTime;
             // chargeProgress = chargeProgress + Time.deltaTime / jumpChargeTime; (same thing)
         }
         //If we release the jump button, and are ground: then jump
-        if (playerInputController.jumpInputUp == true)
+        if (commandController.jumpCommandUp == true)
         {
             //Calculate jumpForce before resetting chargeProgress
             //Linear interpolation (Lerp) between miminumJumpForce and maximumJumpForce. chargeprProgress 

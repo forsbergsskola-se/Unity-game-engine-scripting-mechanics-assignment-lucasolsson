@@ -5,19 +5,22 @@ using UnityEngine;
 
 public class GroundCheckerController : MonoBehaviour
 {
+    public bool isGrounded { get; private set; }
     [SerializeField] private float groundCheckDistance = 0.6f;
     [SerializeField] private float groundCheckSphereRadius = 0.45f;
-    public bool isGrounded { get; private set; }
+    [SerializeField] private LayerMask groundLayers;
+    
    
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
          CheckIfGrounded();
     }
 
     private void CheckIfGrounded()
     {
+        // var ray = new Ray(transform.position, Vector3.down);
         // check if we're grounded, using a raycast. Search unity raycast api if need more info
         //Vector3.down: down in world space
         //-transform.up: down in the GameObject's local space
